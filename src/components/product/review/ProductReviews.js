@@ -44,7 +44,7 @@ function ProductReview({ reviews, productCode }) {
       .then(res => res.json())
       .then(json => console.log(json)) */
 
-    const review = { comment: "test", rating: "test", headline: "test" }
+    const review = { comment: comment, rating: rating, headline: "test" }
 
     fetch(
       `https://api.c10zqj-delawarec1-d1-public.model-t.cc.commerce.ondemand.com/rest/v2/powertools/products/${productCode}/reviews`,
